@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blaze — Cut silence from video, natively</title>
-<meta name="description" content="Blaze finds the pauses in your footage, marks them on a waveform, and exports a stream-copy rough cut or a timeline for Premiere, Resolve and Final Cut. A native Rust app.">
+<title>Blaze — Cut the silence from your videos in minutes</title>
+<meta name="description" content="Blaze finds every pause in your footage and cuts it out. Export the finished video instantly, or send the edit to Premiere, Resolve or Final Cut.">
 <meta name="theme-color" content="#0a0b0c">
-<meta property="og:title" content="Blaze — Cut silence from video, natively">
-<meta property="og:description" content="Find every pause, cut it, export without re-encoding. Native, light, fast.">
+<meta property="og:title" content="Blaze — Cut the silence from your videos in minutes">
+<meta property="og:description" content="Find every pause, cut it, export instantly.">
 <meta property="og:type" content="website">
 <!-- ASSET PLACEHOLDER: set an absolute URL for og:image once the domain is final (assets/og-image.png, 1200x630). -->
 <meta property="og:image" content="assets/og-image.png">
@@ -71,9 +71,9 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <span class="pill"><i></i> Native Rust app. No browser engine.</span>
+      <span class="pill"><i></i> Silence removal, minus the busywork</span>
       <h1>Cut the silence. <em>Keep the take.</em></h1>
-      <p class="lead">Blaze scans your footage for dead air, marks every pause on a waveform, and exports a stream-copy rough cut or a timeline for your editor.</p>
+      <p class="lead">Blaze finds every pause in your footage, cuts it out, and gets you to a finished rough cut in minutes. Export it instantly, or send it to your editor.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#" data-download="linux">Download free</a>
         <a class="btn" href="#pricing">See pricing</a>
@@ -110,7 +110,7 @@
     <span class="chip">Final Cut Pro</span>
     <span class="chip">OpenTimelineIO</span>
     <span class="chip">EDL</span>
-    <span class="chip">Stream-copy video</span>
+    <span class="chip">Instant export</span>
   </div>
 </div>
 
@@ -129,7 +129,7 @@
           <li><svg><use href="#i-x"/></svg>Hunt for every pause across the timeline</li>
           <li><svg><use href="#i-x"/></svg>Hundreds of repetitive cuts per video</li>
           <li><svg><use href="#i-x"/></svg>Pacing drifts from one cut to the next</li>
-          <li><svg><use href="#i-x"/></svg>Re-encode just to trim a take</li>
+          <li><svg><use href="#i-x"/></svg>Wait on a slow export just to trim a take</li>
         </ul>
       </div>
       <div class="card new reveal">
@@ -137,9 +137,9 @@
         <p>One scan, one review pass, one export.</p>
         <ul class="ticks">
           <li><svg><use href="#i-check"/></svg>One scan marks every pause on the waveform</li>
-          <li><svg><use href="#i-check"/></svg>Tune detection level, minimum length and padding</li>
+          <li><svg><use href="#i-check"/></svg>Choose how tight or relaxed the cuts feel</li>
           <li><svg><use href="#i-check"/></svg>Review the cuts, then export or hand off a timeline</li>
-          <li><svg><use href="#i-check"/></svg>Stream-copy export: no re-encode, source container kept</li>
+          <li><svg><use href="#i-check"/></svg>Instantaneous export, in your original quality</li>
         </ul>
       </div>
     </div>
@@ -156,39 +156,39 @@
       <article class="feat s4 reveal">
         <div class="ico"><svg><use href="#i-bolt"/></svg></div>
         <h3>Blaze Mode</h3>
-        <p>Each cut boundary snaps to a nearby usable video keyframe, so the export can copy the encoded streams instead of re-encoding them. Fast, and the video stays bit-for-bit.</p>
+        <p>Instantaneous export. Blaze Mode nudges each cut to the nearest clean point, so your finished video is ready almost the moment you click export, in the quality you recorded it.</p>
         <div class="keys" id="keys" aria-hidden="true"></div>
       </article>
       <article class="feat s2 reveal">
         <div class="ico"><svg><use href="#i-target"/></svg></div>
         <h3>Precision Mode</h3>
-        <p>Boundaries land exactly on the playhead, with no keyframe snapping.</p>
-        <span class="tag">Video export coming soon. Timeline exports work today.</span>
+        <p>Place every cut exactly where you want it, down to the frame you're looking at.</p>
+        <span class="tag">Video export coming soon. Sending to your editor works today.</span>
       </article>
       <article class="feat s2 reveal">
         <div class="ico"><svg><use href="#i-wave"/></svg></div>
         <h3>Silence detection</h3>
-        <p>Detection level, minimum silence duration and padding. Expert mode adds the threshold, peak ceiling and separate before/after padding.</p>
+        <p>Choose how aggressive the cuts are, how short a pause counts, and how much breathing room to keep. Expert mode gives you finer control when you want it.</p>
       </article>
       <article class="feat s2 reveal">
         <div class="ico"><svg><use href="#i-layers"/></svg></div>
         <h3>Waveform timeline</h3>
-        <p>Generated waveform, drag-to-adjust cut boundaries, and fast seeking across long recordings.</p>
+        <p>See your whole recording at a glance. Drag any cut to adjust it, and jump anywhere in a click.</p>
       </article>
       <article class="feat s2 reveal">
         <div class="ico"><svg><use href="#i-skip"/></svg></div>
         <h3>Skip Cuts playback</h3>
-        <p>Preview the edit by jumping over marked regions during playback. Nothing is deleted or modified.</p>
+        <p>Hear the finished edit before you export. Playback skips the cuts, and your original is never touched.</p>
       </article>
       <article class="feat s3 reveal">
         <div class="ico"><svg><use href="#i-cpu"/></svg></div>
-        <h3>Actually native</h3>
-        <p>Rust with an egui interface and MPV preview. No WebView, no Electron, no browser engine. Built to stay light on modest hardware.</p>
+        <h3>Light and out of your way</h3>
+        <p>A lightweight app designed to stay smooth and stay out of your way, so you spend your time editing, not waiting.</p>
       </article>
       <article class="feat s3 reveal">
         <div class="ico"><svg><use href="#i-bolt"/></svg></div>
-        <h3>Never blocks the UI</h3>
-        <p>Media analysis and exports run as background jobs, so you can keep scrubbing and adjusting while they work.</p>
+        <h3>Keep working while it works</h3>
+        <p>Scanning and exporting happen in the background, so you're never stuck staring at a frozen screen.</p>
       </article>
     </div>
   </div>
@@ -208,18 +208,18 @@
   <div class="wrap split">
     <div class="reveal">
       <div class="eyebrow">Export</div>
-      <h2 class="h2">Render it, or hand it off.</h2>
-      <p class="lead">Export finished video, or send the cut list to the editor you already use and finish there.</p>
-      <p class="note">Timeline exports cover one source file with one linked video track and, when present, one linked audio track. No effects, transitions or multi-clip timelines. They point at your original media; nothing is bundled.</p>
+      <h2 class="h2">Finish here, or finish in your editor.</h2>
+      <p class="lead">Get your finished video in an instant, or send the edit to the editor you already use and polish it there.</p>
+      <p class="note">Sending to an editor works with one video file at a time: one clip in, one edit out. No effects or transitions are carried over, and your original file stays where it is.</p>
     </div>
     <div class="rows reveal">
-      <div class="row"><div><b>Blaze Export</b><span>Stream-copy. Kept ranges are concatenated without re-encoding, source container preserved.</span></div><code class="ext mono">video</code></div>
-      <div class="row"><div><b>Adobe Premiere Pro</b><span>Final Cut Pro 7 XML interchange</span></div><code class="ext mono">.xml</code></div>
-      <div class="row"><div><b>DaVinci Resolve</b><span>Final Cut Pro 7 XML interchange</span></div><code class="ext mono">.xml</code></div>
-      <div class="row"><div><b>Final Cut Pro</b><span>FCPXML 1.14, introduced with Final Cut Pro 12.0</span></div><code class="ext mono">.fcpxml</code></div>
-      <div class="row"><div><b>OpenTimelineIO</b><span>Linked video and audio tracks with source references</span></div><code class="ext mono">.otio</code></div>
-      <div class="row"><div><b>Edit Decision List</b><span>CMX 3600-style</span></div><code class="ext mono">.edl</code></div>
-      <div class="row"><div><b>Precision Export</b><span>Re-encoded video from Precision Mode</span></div><code class="ext soon mono">soon</code></div>
+      <div class="row"><div><b>Blaze Export</b><span>Instantaneous export via Blaze Mode, in your original quality.</span></div><code class="ext mono">video</code></div>
+      <div class="row"><div><b>Adobe Premiere Pro</b><span>Your cuts, ready on the timeline</span></div><code class="ext mono">.xml</code></div>
+      <div class="row"><div><b>DaVinci Resolve</b><span>Your cuts, ready on the timeline</span></div><code class="ext mono">.xml</code></div>
+      <div class="row"><div><b>Final Cut Pro</b><span>Your cuts, ready on the timeline (Final Cut Pro 12 and newer)</span></div><code class="ext mono">.fcpxml</code></div>
+      <div class="row"><div><b>OpenTimelineIO</b><span>One timeline file that other editors can open</span></div><code class="ext mono">.otio</code></div>
+      <div class="row"><div><b>Edit Decision List</b><span>The classic cut list most editors can read</span></div><code class="ext mono">.edl</code></div>
+      <div class="row"><div><b>Precision Export</b><span>Finished video from Precision Mode</span></div><code class="ext soon mono">soon</code></div>
     </div>
   </div>
 </section>
@@ -236,7 +236,7 @@
         <div class="price"><b>$0</b></div>
         <p class="sub">No card required</p>
         <ul>
-          <li><svg><use href="#i-check"/></svg>Full editor, waveform and silence detection</li>
+          <li><svg><use href="#i-check"/></svg>Full editor and silence removal</li>
           <li><svg><use href="#i-check"/></svg>2 exports in total, any format</li>
           <li><svg><use href="#i-check"/></svg>Editing works offline</li>
         </ul>
@@ -281,19 +281,19 @@
     <div class="faq reveal">
       <details>
         <summary>Does it work with my editor?</summary>
-        <p>Blaze exports Final Cut Pro 7 XML for Premiere Pro and DaVinci Resolve, FCPXML 1.14 for Final Cut Pro, plus OpenTimelineIO and EDL. Or skip the editor and export the cut video directly.</p>
+        <p>Yes. Blaze sends your cuts straight to Premiere Pro, DaVinci Resolve and Final Cut Pro, with OpenTimelineIO and EDL for other editors. Or skip the editor and export the cut video directly.</p>
       </details>
       <details>
         <summary>What's the difference between Blaze Mode and Precision Mode?</summary>
-        <p>Blaze Mode snaps cuts to keyframes so the export can be a lossless stream copy. Precision Mode puts cuts exactly at the playhead for finer control, but a rendered export may need to re-encode parts of the video. Precision video export isn't available yet; timeline exports are.</p>
+        <p>Blaze Mode is built for speed: it nudges each cut to the nearest clean point so export is instantaneous. Precision Mode lets you place cuts exactly where you want them. Video export for Precision Mode is coming soon; sending to your editor works today.</p>
       </details>
       <details>
-        <summary>Does it re-encode my video?</summary>
-        <p>Not in Blaze Export. It copies the encoded streams for the kept ranges and keeps your source container.</p>
+        <summary>Will it hurt my video quality?</summary>
+        <p>No. Blaze Export keeps your video exactly as you recorded it. Nothing is recompressed.</p>
       </details>
       <details>
         <summary>Does it need internet?</summary>
-        <p>Editing works offline. Exporting needs a connection so your license can be checked. The app sends a machine ID and gets back allow or deny. Nothing from your footage leaves your computer.</p>
+        <p>Editing works offline. Exporting needs a connection so your license can be checked. Nothing from your footage is ever uploaded.</p>
       </details>
       <details>
         <summary>How many devices can I use?</summary>
