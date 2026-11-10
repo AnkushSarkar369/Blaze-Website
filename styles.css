@@ -178,8 +178,8 @@ h1 em { font-style: normal; color: var(--accent); }
 .badge { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--faint); vertical-align: 2px; margin-left: 8px; }
 
 /* Screenshot */
-.shot { position: relative; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--surface); aspect-ratio: 16 / 10; }
-.shot img { width: 100%; height: 100%; object-fit: cover; }
+.shot { position: relative; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--surface); }
+.shot img { width: 100%; height: auto; object-fit: contain; }
 .shot .empty { position: absolute; inset: 0; display: none; place-items: center; text-align: center; gap: 6px; color: var(--faint); font-size: 14px;
   background: repeating-linear-gradient(135deg, transparent 0 14px, var(--border-soft) 14px 15px), var(--surface); }
 .shot.is-empty .empty { display: grid; align-content: center; }
