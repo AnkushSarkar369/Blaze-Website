@@ -264,3 +264,14 @@ footer { border-top: 1px solid var(--border-soft); padding: 36px 0 48px; color: 
   * { transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* Story timeline */
+.tl { position: relative; margin: 0; padding: 0; list-style: none; }
+.tl::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px; background: var(--border); }
+.tl li { position: relative; padding: 0 0 26px 30px; }
+.tl li:last-child { padding-bottom: 0; }
+.tl li::before { content: ""; position: absolute; left: 0; top: 6px; width: 11px; height: 11px; border-radius: 50%; background: var(--bg); border: 2px solid var(--border); }
+.tl li.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.tl time { display: block; font-size: 12px; color: var(--accent); }
+.tl b { display: block; font-weight: 600; font-size: 15.5px; margin-top: 2px; }
+.tl p { color: var(--muted); font-size: 14.5px; margin-top: 3px; max-width: 54ch; }
