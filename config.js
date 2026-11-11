@@ -1,11 +1,11 @@
 // Fill these in. Nothing else in the site needs editing to go live.
 //
-// Dodo Payments dashboard -> Products -> open each product -> copy its checkout / payment link.
+// Gumroad product checkout links.
 // Until a link is set, its button shows a "not set yet" toast instead of navigating.
 window.BLAZE_CONFIG = {
   checkout: {
-    lifetime: "https://checkout.dodopayments.com/buy/pdt_0NrdKl39MG2JCgY233eMQ?quantity=1", // $89 one-time
-    monthly: "https://checkout.dodopayments.com/buy/pdt_0NrdKlBGVThJcIgZhGH0g?quantity=1",  // $8 / month
+    lifetime: "https://ankushonline.gumroad.com/l/blaze-permanent?wanted=true", // $89 one-time
+    monthly: "https://ankushonline.gumroad.com/l/blaze-monthly?wanted=true",  // $9 / month
   },
   download: {
     linux: "",   // e.g. a GitHub Releases asset URL
