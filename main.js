@@ -29,10 +29,10 @@
     }
   }
   $$("[data-checkout]").forEach((a) =>
-    wire(a, cfg.checkout && cfg.checkout[a.dataset.checkout], "Checkout link isn't set yet. Add it in config.js.")
+    wire(a, cfg.checkout && cfg.checkout[a.dataset.checkout], "This purchase option is temporarily unavailable. Please try again later.")
   );
   $$("[data-download]").forEach((a) =>
-    wire(a, cfg.download && cfg.download[a.dataset.download], "Download link isn't set yet. Add it in config.js.")
+    wire(a, cfg.download && cfg.download[a.dataset.download], "Downloads are not available yet. Please check back soon.")
   );
   const support = $("#support");
   if (support && cfg.supportEmail) {
