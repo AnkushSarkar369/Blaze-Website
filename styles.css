@@ -217,7 +217,7 @@ h1 em { font-style: normal; color: var(--accent); }
 .pricing { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
 .plan { border: 1px solid var(--border); border-radius: 16px; background: var(--surface); padding: 30px; display: flex; flex-direction: column; position: relative; }
 .plan.free { border-color: var(--border); background: linear-gradient(180deg, var(--surface-2), transparent 58%), var(--surface); }
-.plan.hot { border-color: var(--accent); background: linear-gradient(180deg, var(--accent-soft), transparent 45%), var(--surface); box-shadow: 0 30px 80px -40px var(--glow); }
+.plan.hot { border-color: var(--accent); background: linear-gradient(180deg, var(--accent-soft), transparent 48%), var(--surface); box-shadow: 0 30px 80px -40px var(--glow); transform: scale(1.02); z-index: 1; }
 .plan .flag { position: absolute; top: -12px; left: 30px; background: var(--accent); color: var(--accent-ink); font-size: 12px; font-weight: 700; padding: 3px 12px; border-radius: 999px; letter-spacing: 0.03em; }
 .plan h3 { font-size: 15px; font-weight: 600; color: var(--muted); }
 .price { display: flex; align-items: baseline; gap: 6px; margin: 12px 0 4px; }
@@ -265,7 +265,7 @@ footer { border-top: 1px solid var(--border-soft); padding: 36px 0 48px; color: 
   .bento { grid-template-columns: repeat(2, 1fr); }
   .s2, .s3, .s4, .s6 { grid-column: span 2; }
   .pricing { max-width: 460px; margin-inline: auto; }
-  .plan.hot { order: 0; }
+  .plan.hot { order: 0; transform: none; }
 }
 @media (max-width: 560px) {
   .hero { padding-top: 56px; }
